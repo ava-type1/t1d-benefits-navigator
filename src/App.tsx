@@ -24,12 +24,23 @@ function App() {
         'basaglar': ['Basaglar'],
         'tresiba': ['Tresiba'],
         'toujeo': ['Toujeo'],
-        'dexcom-g7': ['Dexcom G6', 'Dexcom G7', 'Dexcom'],
-        'freestyle-libre': ['FreeStyle Libre'],
-        'omnipod-5': ['Omnipod'],
-        'tandem-tslim': ['t:slim', 'Tandem'],
-        'medtronic-minimed': ['MiniMed', 'Medtronic'],
-        'test-strips': ['test strips', 'glucose monitoring']
+        'dexcom-g7': ['Dexcom G7', 'Dexcom G7 15-Day', 'Dexcom'],
+        'dexcom-g6': ['Dexcom G6', 'Dexcom'],
+        'freestyle-libre-3': ['FreeStyle Libre 3', 'FreeStyle Libre'],
+        'freestyle-libre-2': ['FreeStyle Libre 2', 'FreeStyle Libre'],
+        'guardian-4': ['Guardian 4', 'Guardian', 'Medtronic'],
+        'omnipod-5': ['Omnipod 5', 'Omnipod'],
+        'omnipod-dash': ['Omnipod DASH', 'Omnipod'],
+        'tandem-tslim': ['t:slim X2', 't:slim', 'Tandem'],
+        'tandem-mobi': ['Tandem Mobi', 'Tandem'],
+        'medtronic-780g': ['MiniMed 780G', 'MiniMed', 'Medtronic'],
+        'medtronic-770g': ['MiniMed 770G', 'MiniMed', 'Medtronic'],
+        'inpen': ['InPen', 'Medtronic'],
+        'test-strips': ['test strips', 'glucose monitoring'],
+        'pen-needles': ['pen needles', 'supplies'],
+        'syringes': ['syringes', 'supplies'],
+        'glucagon': ['glucagon', 'emergency'],
+        'ketone-strips': ['ketone', 'strips']
       };
 
       return data.selectedSupplies.some(supply => {

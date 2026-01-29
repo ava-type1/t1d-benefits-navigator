@@ -24,11 +24,22 @@ const diabetesSupplies = [
   { id: 'tresiba', name: 'Tresiba (Novo Nordisk)', category: 'insulin' },
   { id: 'toujeo', name: 'Toujeo (Sanofi)', category: 'insulin' },
   { id: 'dexcom-g7', name: 'Dexcom G7 CGM', category: 'cgm' },
-  { id: 'freestyle-libre', name: 'FreeStyle Libre CGM', category: 'cgm' },
+  { id: 'dexcom-g6', name: 'Dexcom G6 CGM', category: 'cgm' },
+  { id: 'freestyle-libre-3', name: 'FreeStyle Libre 3 CGM', category: 'cgm' },
+  { id: 'freestyle-libre-2', name: 'FreeStyle Libre 2 CGM', category: 'cgm' },
+  { id: 'guardian-4', name: 'Guardian 4 CGM (Medtronic)', category: 'cgm' },
   { id: 'omnipod-5', name: 'Omnipod 5', category: 'pump' },
+  { id: 'omnipod-dash', name: 'Omnipod DASH', category: 'pump' },
   { id: 'tandem-tslim', name: 'Tandem t:slim X2', category: 'pump' },
-  { id: 'medtronic-minimed', name: 'MiniMed (Medtronic)', category: 'pump' },
-  { id: 'test-strips', name: 'Blood Glucose Test Strips', category: 'supplies' }
+  { id: 'tandem-mobi', name: 'Tandem Mobi', category: 'pump' },
+  { id: 'medtronic-780g', name: 'MiniMed 780G (Medtronic)', category: 'pump' },
+  { id: 'medtronic-770g', name: 'MiniMed 770G (Medtronic)', category: 'pump' },
+  { id: 'inpen', name: 'InPen Smart Insulin Pen (Medtronic)', category: 'supplies' },
+  { id: 'test-strips', name: 'Blood Glucose Test Strips', category: 'supplies' },
+  { id: 'pen-needles', name: 'Pen Needles', category: 'supplies' },
+  { id: 'syringes', name: 'Insulin Syringes', category: 'supplies' },
+  { id: 'glucagon', name: 'Glucagon Emergency Kit', category: 'supplies' },
+  { id: 'ketone-strips', name: 'Ketone Test Strips', category: 'supplies' }
 ];
 
 const US_STATES = [

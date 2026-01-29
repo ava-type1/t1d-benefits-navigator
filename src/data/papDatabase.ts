@@ -331,6 +331,262 @@ export const PAP_DATABASE: PAPProgram[] = [
       "Disease-specific assistance program listings"
     ],
     lastVerified: "2025-01-29"
+  },
+  {
+    id: "dexcom-pap",
+    name: "Dexcom Patient Assistance Program",
+    organization: "Dexcom, Inc.",
+    organizationType: "manufacturer",
+    category: "cgm",
+    products: ["Dexcom G6", "Dexcom G7", "Dexcom G7 15-Day"],
+    eligibilityRequirements: {
+      incomeThreshold: {
+        percentOfFPL: 400,
+        description: "Household income at or below 400% of Federal Poverty Level"
+      },
+      insuranceRestrictions: [
+        "Must be uninsured or underinsured for CGM coverage",
+        "Not eligible if CGM is covered by current insurance",
+        "Not available for government-insured patients (Medicare, Medicaid, VA, Tricare)"
+      ],
+      citizenship: "US resident",
+      additionalRequirements: [
+        "Must have a valid prescription for a Dexcom CGM system",
+        "Must have Type 1 or Type 2 diabetes",
+        "Must complete application with healthcare provider"
+      ]
+    },
+    benefits: {
+      coverageType: "free",
+      amount: "Free Dexcom CGM system and sensors",
+      duration: "Up to 12 months, renewable",
+      limitations: ["Subject to product availability", "Must reapply annually"]
+    },
+    applicationProcess: {
+      applicationUrl: "https://assistance.dexcom.com",
+      phoneNumber: "1-888-738-3646",
+      requiredDocuments: [
+        "Completed patient application",
+        "Healthcare provider prescription and signature",
+        "Proof of income or financial hardship documentation",
+        "Insurance denial letter (if applicable)"
+      ],
+      processingTime: "Approximately 2-4 weeks",
+      renewalRequired: true,
+      physicianInvolvement: true
+    },
+    notes: [
+      "Dexcom expanded PAP to include G7 devices",
+      "Program covers both the transmitter/receiver and ongoing sensor supplies",
+      "Healthcare provider must fax or submit application on patient's behalf",
+      "Income verified at 400% FPL per official Dexcom FAQ"
+    ],
+    lastVerified: "2025-01-29"
+  },
+  {
+    id: "insulet-omnipod-financial-assistance",
+    name: "Insulet Financial Assistance Program",
+    organization: "Insulet Corporation",
+    organizationType: "manufacturer",
+    category: "pump",
+    products: ["Omnipod DASH", "Omnipod 5"],
+    eligibilityRequirements: {
+      incomeThreshold: {
+        percentOfFPL: 400,
+        description: "Must demonstrate financial need based on criteria established by Insulet"
+      },
+      insuranceRestrictions: [
+        "Open to patients who have lost or changed insurance coverage",
+        "Available for patients with inadequate pump/supply coverage",
+        "Must fill prescription through the Pharmacy channel"
+      ],
+      citizenship: "US resident",
+      additionalRequirements: [
+        "Must have a valid Omnipod DASH or Omnipod 5 prescription",
+        "Must demonstrate financial need",
+        "Must be a current or new Omnipod user"
+      ]
+    },
+    benefits: {
+      coverageType: "free",
+      amount: "Financial assistance for Omnipod pods and supplies",
+      duration: "Varies based on individual circumstances",
+      limitations: ["Subject to eligibility verification", "Must use Pharmacy channel for fulfillment"]
+    },
+    applicationProcess: {
+      applicationUrl: "https://www.omnipod.com/is-omnipod-right-for-me/coverage/financial-assistance",
+      phoneNumber: "1-800-591-3455",
+      requiredDocuments: [
+        "Completed application form",
+        "Valid Omnipod prescription",
+        "Proof of financial need",
+        "Insurance information (if applicable)"
+      ],
+      processingTime: "Varies",
+      renewalRequired: true,
+      physicianInvolvement: true
+    },
+    notes: [
+      "Program designed to help patients continue pod therapy regardless of insurance status",
+      "Financing plans may also be available for those who don't qualify for full assistance",
+      "Contact Insulet directly for most current eligibility criteria",
+      "Covers both Omnipod DASH and Omnipod 5 systems"
+    ],
+    lastVerified: "2025-01-29"
+  },
+  {
+    id: "medtronic-financial-assistance",
+    name: "Medtronic Financial Assistance Program",
+    organization: "Medtronic Diabetes",
+    organizationType: "manufacturer",
+    category: "pump",
+    products: ["MiniMed 780G", "MiniMed 770G", "Guardian 4 CGM", "InPen Smart Insulin Pen"],
+    eligibilityRequirements: {
+      incomeThreshold: {
+        percentOfFPL: 400,
+        description: "Aid available to those significantly impacted with overall healthcare costs"
+      },
+      insuranceRestrictions: [
+        "Available for uninsured or underinsured patients",
+        "Patients with high out-of-pocket costs may qualify",
+        "Separate CGM Pharmacy Copay program for insured patients"
+      ],
+      citizenship: "US resident",
+      additionalRequirements: [
+        "Must demonstrate significant financial hardship",
+        "Must have a prescription for Medtronic diabetes products"
+      ]
+    },
+    benefits: {
+      coverageType: "free",
+      amount: "Financial assistance for pump and CGM systems",
+      duration: "Varies based on program and eligibility",
+      limitations: ["Terms and conditions apply", "Subject to program availability"]
+    },
+    applicationProcess: {
+      applicationUrl: "https://www.medtronicdiabetes.com/financial-support-programs",
+      phoneNumber: "1-800-646-4633",
+      requiredDocuments: [
+        "Completed application",
+        "Proof of income/financial hardship",
+        "Insurance information",
+        "Prescription from healthcare provider"
+      ],
+      processingTime: "Varies",
+      renewalRequired: true,
+      physicianInvolvement: true
+    },
+    notes: [
+      "Also offers Flex Payment Plan — pump therapy for as little as $50/month",
+      "CGM Pharmacy Copay program available separately for insured patients",
+      "InPen User Access program: as little as $60/year for smart insulin pen",
+      "Switch2System program for users trading in pumps from other manufacturers",
+      "Multiple programs available — contact Medtronic to find best fit"
+    ],
+    lastVerified: "2025-01-29"
+  },
+  {
+    id: "tandem-payment-plan",
+    name: "Tandem Diabetes Payment Plan & Financial Support",
+    organization: "Tandem Diabetes Care",
+    organizationType: "manufacturer",
+    category: "pump",
+    products: ["t:slim X2", "Tandem Mobi"],
+    eligibilityRequirements: {
+      incomeThreshold: {
+        percentOfFPL: 0,
+        description: "No specific income threshold published — payment plans and case-by-case financial assistance"
+      },
+      insuranceRestrictions: [
+        "Payment plan NOT available for Medicare, Medicaid, Tricare, or other federal/state programs",
+        "Insurance verification team works to find lowest out-of-pocket cost",
+        "Case-by-case assistance for uninsured patients"
+      ],
+      citizenship: "US resident",
+      additionalRequirements: [
+        "Must have a valid prescription for Tandem insulin pump",
+        "Payment plan requires pump purchased directly from Tandem after Sept 19, 2022"
+      ]
+    },
+    benefits: {
+      coverageType: "payment_plan",
+      amount: "Flexible monthly payment plans for insulin pump purchase",
+      duration: "Duration of payment plan",
+      limitations: [
+        "Not available in all states",
+        "Not available for government-insured patients",
+        "Payment plan only for pumps purchased directly from Tandem"
+      ]
+    },
+    applicationProcess: {
+      applicationUrl: "https://www.tandemdiabetes.com/support/benefit-programs",
+      phoneNumber: "1-877-801-6901",
+      requiredDocuments: [
+        "Insurance information",
+        "Prescription from healthcare provider",
+        "Financial information for payment plan"
+      ],
+      processingTime: "Contact within 2 business days of inquiry",
+      renewalRequired: false,
+      physicianInvolvement: true
+    },
+    notes: [
+      "Tandem does NOT have a traditional free PAP like insulin manufacturers",
+      "Offers flexible payment plans to reduce upfront costs",
+      "Insurance verification team actively works to minimize patient costs",
+      "Contact Tandem directly — they may offer case-by-case financial hardship assistance",
+      "Supplies (infusion sets, cartridges) covered separately through insurance or DME"
+    ],
+    lastVerified: "2025-01-29"
+  },
+  {
+    id: "insulin-pumpers-foundation",
+    name: "Insulin Pumpers Foundation",
+    organization: "Insulin Pumpers Foundation",
+    organizationType: "nonprofit",
+    category: "pump",
+    products: ["Insulin pumps (various manufacturers)", "Pump supplies"],
+    eligibilityRequirements: {
+      incomeThreshold: {
+        percentOfFPL: 300,
+        description: "Must demonstrate lack of financial resources to purchase an insulin pump"
+      },
+      insuranceRestrictions: [
+        "For those who lack insurance coverage for pump therapy",
+        "May assist those with inadequate coverage"
+      ],
+      citizenship: "US resident",
+      additionalRequirements: [
+        "Must have Type 1 diabetes",
+        "Must have a prescription for insulin pump therapy",
+        "Must demonstrate financial need"
+      ]
+    },
+    benefits: {
+      coverageType: "free",
+      amount: "Provides insulin pump technology to those who cannot afford it",
+      duration: "One-time pump provision",
+      limitations: ["Limited availability", "Subject to funding"]
+    },
+    applicationProcess: {
+      applicationUrl: "https://www.diabetesnet.com/diabetes-resources/diabetes-assistance-programs/",
+      phoneNumber: "",
+      requiredDocuments: [
+        "Application form",
+        "Proof of financial need",
+        "Medical documentation",
+        "Prescription for pump therapy"
+      ],
+      processingTime: "Varies based on availability",
+      renewalRequired: false,
+      physicianInvolvement: true
+    },
+    notes: [
+      "Nonprofit focused specifically on getting pumps to those who can't afford them",
+      "May have waiting lists depending on funding",
+      "Good option for those denied by manufacturer programs"
+    ],
+    lastVerified: "2025-01-29"
   }
 ];
 
