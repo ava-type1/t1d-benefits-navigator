@@ -100,7 +100,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Medication shipped to prescriber's office"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.lillycares.com",
+      applicationUrl: "https://www.lillycares.com/",
       phoneNumber: "1-800-545-6962",
       requiredDocuments: [
         "Completed application",
@@ -149,7 +149,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Automatic refills available for most products", "Shipped to prescriber office"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.novocare.com/diabetes/help-with-costs/pap.html",
+      applicationUrl: "https://www.novocare.com/diabetes-overview/let-us-help/pap.html",
       phoneNumber: "1-866-310-7549",
       requiredDocuments: [
         "Completed application with physician section",
@@ -245,7 +245,7 @@ export const PAP_DATABASE: PAPProgram[] = [
     },
     applicationProcess: {
       phoneNumber: "844-330-5535",
-      applicationUrl: "https://www.freestyle.abbott/us-en/private-insurance.html",
+      applicationUrl: "https://www.freestyle.abbott/us-en/myfreestyle-freestyle-libre-3.html",
       requiredDocuments: ["Insurance information", "Prescription"],
       processingTime: "Immediate",
       renewalRequired: false,
@@ -519,7 +519,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       ]
     },
     applicationProcess: {
-      applicationUrl: "https://www.tandemdiabetes.com/support/benefit-programs/payment-plan",
+      applicationUrl: "https://www.tandemdiabetes.com/support/benefit-programs",
       phoneNumber: "1-877-801-6901",
       requiredDocuments: [
         "Insurance information",
