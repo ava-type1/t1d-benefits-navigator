@@ -281,15 +281,20 @@ export default function SearchResults({ programs, userData, onBack }: SearchResu
                                     </a>
                                   )}
                                   {program.applicationProcess.applicationUrl && (
-                                    <a 
-                                      href={program.applicationProcess.applicationUrl}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="flex items-center text-blue-400 hover:text-blue-300 transition-colors"
-                                    >
-                                      <LinkIcon className="h-4 w-4 mr-2" />
-                                      Apply Online
-                                    </a>
+                                    <div>
+                                      <a 
+                                        href={program.applicationProcess.applicationUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+                                      >
+                                        <LinkIcon className="h-4 w-4 mr-2" />
+                                        Apply Online
+                                      </a>
+                                      <p className="text-xs text-gray-500 mt-1 break-all select-all">
+                                        {program.applicationProcess.applicationUrl}
+                                      </p>
+                                    </div>
                                   )}
                                 </div>
                               </div>
@@ -350,6 +355,17 @@ export default function SearchResults({ programs, userData, onBack }: SearchResu
                                 <LinkIcon className="h-4 w-4 mr-2" />
                                 Apply Online
                               </a>
+                            )}
+                            {program.applicationProcess.applicationUrl && (
+                              <button
+                                onClick={() => {
+                                  navigator.clipboard.writeText(program.applicationProcess.applicationUrl || '');
+                                  alert('Link copied! Paste in Safari if the page doesn\'t load.');
+                                }}
+                                className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors flex items-center text-sm"
+                              >
+                                📋 Copy Link
+                              </button>
                             )}
                           </div>
                         </div>

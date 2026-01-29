@@ -149,7 +149,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Automatic refills available for most products", "Shipped to prescriber office"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.novocare.com/eligibility/pap.html",
+      applicationUrl: "https://www.novocare.com/diabetes/help-with-costs/pap.html",
       phoneNumber: "1-866-310-7549",
       requiredDocuments: [
         "Completed application with physician section",
