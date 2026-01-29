@@ -75,16 +75,20 @@ export default function SearchResults({ programs, userData, onBack }: SearchResu
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+      {/* Sticky Back Button */}
+      <div className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-lg border-b border-gray-700 px-4 py-3">
+        <button
+          onClick={onBack}
+          className="flex items-center text-blue-400 hover:text-blue-300 transition-colors font-medium"
+        >
+          <ArrowLeftIcon className="h-5 w-5 mr-2" />
+          ← Back to Results
+        </button>
+      </div>
+      
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <button
-            onClick={onBack}
-            className="flex items-center text-blue-400 hover:text-blue-300 mb-4 transition-colors"
-          >
-            <ArrowLeftIcon className="h-5 w-5 mr-2" />
-            Back to Form
-          </button>
           
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
