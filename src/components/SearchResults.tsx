@@ -143,6 +143,9 @@ export default function SearchResults({ programs, userData, onBack }: SearchResu
                 <p className="text-gray-300">
                   Found <span className="font-bold text-white">{sortedPrograms.length}</span> potential programs
                 </p>
+                <p className="text-gray-500 text-sm mt-2">
+                  💡 Tip: Calling is the fastest way to apply. If a website link doesn't load, use "Copy Link" and paste it in Safari.
+                </p>
               </div>
 
               {sortedPrograms.map(program => {
@@ -339,10 +342,10 @@ export default function SearchResults({ programs, userData, onBack }: SearchResu
                             {program.applicationProcess.phoneNumber && (
                               <a 
                                 href={`tel:${program.applicationProcess.phoneNumber}`}
-                                className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors flex items-center"
+                                className="px-5 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors flex items-center font-medium text-base"
                               >
-                                <PhoneIcon className="h-4 w-4 mr-2" />
-                                Call Now
+                                <PhoneIcon className="h-5 w-5 mr-2" />
+                                Call {program.applicationProcess.phoneNumber}
                               </a>
                             )}
                             {program.applicationProcess.applicationUrl && (
@@ -353,14 +356,14 @@ export default function SearchResults({ programs, userData, onBack }: SearchResu
                                 className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors flex items-center"
                               >
                                 <LinkIcon className="h-4 w-4 mr-2" />
-                                Apply Online
+                                Visit Website
                               </a>
                             )}
                             {program.applicationProcess.applicationUrl && (
                               <button
                                 onClick={() => {
                                   navigator.clipboard.writeText(program.applicationProcess.applicationUrl || '');
-                                  alert('Link copied! Paste in Safari if the page doesn\'t load.');
+                                  alert('Link copied! Open Safari and paste to visit the website.');
                                 }}
                                 className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors flex items-center text-sm"
                               >

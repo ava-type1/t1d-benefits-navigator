@@ -100,7 +100,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Medication shipped to prescriber's office"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.lillycares.com/how-to-apply",
+      applicationUrl: "https://www.lillycares.com",
       phoneNumber: "1-800-545-6962",
       requiredDocuments: [
         "Completed application",
@@ -414,7 +414,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Subject to eligibility verification", "Must use Pharmacy channel for fulfillment"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.omnipod.com/is-omnipod-right-for-me/coverage/financial-assistance",
+      applicationUrl: "https://www.omnipod.com/is-omnipod-right-for-me/coverage",
       phoneNumber: "1-800-591-3455",
       requiredDocuments: [
         "Completed application form",
