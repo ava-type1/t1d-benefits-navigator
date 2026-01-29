@@ -414,7 +414,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Subject to eligibility verification", "Must use Pharmacy channel for fulfillment"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.omnipod.com/is-omnipod-right-for-me/coverage",
+      applicationUrl: "https://www.omnipod.com/is-omnipod-right-for-me/coverage/financial-assistance",
       phoneNumber: "1-800-591-3455",
       requiredDocuments: [
         "Completed application form",
@@ -569,7 +569,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Limited availability", "Subject to funding"]
     },
     applicationProcess: {
-      applicationUrl: "https://www.diabetesnet.com/diabetes-resources/diabetes-assistance-programs/",
+      applicationUrl: "http://foundation.insulin-pumpers.org/",
       phoneNumber: "",
       requiredDocuments: [
         "Application form",
