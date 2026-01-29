@@ -100,7 +100,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       limitations: ["Medication shipped to prescriber's office"]
     },
     applicationProcess: {
-      applicationUrl: "http://www.lillycareseservice.com",
+      applicationUrl: "https://www.lillycares.com/how-to-apply",
       phoneNumber: "1-800-545-6962",
       requiredDocuments: [
         "Completed application",
@@ -245,7 +245,7 @@ export const PAP_DATABASE: PAPProgram[] = [
     },
     applicationProcess: {
       phoneNumber: "844-330-5535",
-      applicationUrl: "libresavings.com",
+      applicationUrl: "https://www.freestyle.abbott/us-en/private-insurance.html",
       requiredDocuments: ["Insurance information", "Prescription"],
       processingTime: "Immediate",
       renewalRequired: false,
@@ -519,7 +519,7 @@ export const PAP_DATABASE: PAPProgram[] = [
       ]
     },
     applicationProcess: {
-      applicationUrl: "https://www.tandemdiabetes.com/support/benefit-programs",
+      applicationUrl: "https://www.tandemdiabetes.com/support/benefit-programs/payment-plan",
       phoneNumber: "1-877-801-6901",
       requiredDocuments: [
         "Insurance information",
