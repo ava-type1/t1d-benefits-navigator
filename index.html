@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>T1D Benefits Navigator - Find Patient Assistance Programs</title>
+    <meta name="title" content="T1D Benefits Navigator - Find Patient Assistance Programs" />
+    <meta name="description" content="Find Patient Assistance Programs for Type 1 Diabetes supplies. Connect with manufacturer and nonprofit programs to reduce costs for insulin, CGMs, pumps, and more." />
+    <meta name="keywords" content="type 1 diabetes, patient assistance, insulin help, diabetes supplies, CGM, insulin pump, T1D, financial assistance" />
+    <meta name="author" content="KameronMartinLLC / AVA Ecosystem" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/t1d-benefits-navigator/favicon.ico" />
+    <link rel="apple-touch-icon" href="/t1d-benefits-navigator/icon-192x192.png" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/t1d-benefits-navigator/manifest.json" />
+    
+    <!-- iOS PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="T1D Benefits" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4c7cf0" />
+    <meta name="msapplication-TileColor" content="#0f0f23" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://t1d-benefits.pages.dev/" />
+    <meta property="og:title" content="T1D Benefits Navigator - Find Patient Assistance Programs" />
+    <meta property="og:description" content="Find Patient Assistance Programs for Type 1 Diabetes supplies. Reduce costs for insulin, CGMs, pumps, and more." />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://t1d-benefits.pages.dev/" />
+    <meta property="twitter:title" content="T1D Benefits Navigator - Find Patient Assistance Programs" />
+    <meta property="twitter:description" content="Find Patient Assistance Programs for Type 1 Diabetes supplies. Reduce costs for insulin, CGMs, pumps, and more." />
+    <meta property="twitter:image" content="/og-image.png" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" crossorigin src="/t1d-benefits-navigator/assets/index-45T0VaTA.js"></script>
+    <link rel="stylesheet" crossorigin href="/t1d-benefits-navigator/assets/index-D1NYccBg.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
